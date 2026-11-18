@@ -15,8 +15,8 @@ show(0);
 (function(){
 var f=document.querySelector('.cform');if(!f)return;
 var r=f.querySelector('[name=redirect]'),s=f.querySelector('[name=subject]'),t=f.querySelector('[name=topic]'),b=f.querySelector('button[type=submit]'),bt=b.textContent;
-// Web3Forms needs an absolute redirect on the same domain, so point it at thanks.html wherever the site is served from
-if(/^https?:$/.test(location.protocol))r.value=new URL('thanks.html',location.href).href;
+// Web3Forms needs an absolute redirect on the same domain, so point it at the thanks page wherever the site is served from
+if(/^https?:$/.test(location.protocol))r.value=new URL('thanks',location.href).href;
 f.addEventListener('submit',function(){if(t.value)s.value='New enquiry: '+t.value;b.disabled=true;b.textContent='Sending…';});
 window.addEventListener('pageshow',function(){b.disabled=false;b.textContent=bt;});
 })();
