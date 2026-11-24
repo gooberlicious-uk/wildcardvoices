@@ -46,7 +46,7 @@
       },
       "image": "https://wildcardvoices.co.uk/images/og-image.jpg",
       "slogan": "Your voice. Our mixtape.",
-      "description": "Worcester’s friendliest, most bonkers music community: a no-audition community choir in Worcester, 1-1 singing lessons across the Midlands and online, and singing and performance workshops for schools.",
+      "description": "Worcester’s friendliest, most bonkers music community: a no-audition community choir in Worcester, 1-1 singing lessons across the Midlands and online, and singing and acting workshops for schools.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Worcester",
@@ -93,7 +93,7 @@
       "@id": "https://wildcardvoices.co.uk/#website",
       "url": "https://wildcardvoices.co.uk/",
       "name": "Wildcard Voices",
-      "description": "Worcester’s friendliest, most bonkers music community: a no-audition community choir in Worcester, 1-1 singing lessons across the Midlands and online, and singing and performance workshops for schools.",
+      "description": "Worcester’s friendliest, most bonkers music community: a no-audition community choir in Worcester, 1-1 singing lessons across the Midlands and online, and singing and acting workshops for schools.",
       "inLanguage": "en-GB",
       "publisher": {
         "@id": "https://wildcardvoices.co.uk/#organization"
@@ -118,7 +118,7 @@
       "@id": "https://wildcardvoices.co.uk/choir#service",
       "name": "Wildcard Choir",
       "serviceType": "Community choir",
-      "description": "A weekly no-audition community choir in Worcester for anyone who loves a big song. Everything is taught by ear, so no sheet music or singing experience is needed. Each term builds to a concert with the chance to sing with a live band.",
+      "description": "A weekly no-audition community choir in Worcester for anyone aged 18 and over who loves a big song. Everything is taught by ear, so no sheet music or singing experience is needed. Each term builds to a concert with the chance to sing with a live band.",
       "provider": {
         "@id": "https://wildcardvoices.co.uk/#organization"
       },
@@ -128,7 +128,8 @@
       },
       "audience": {
         "@type": "PeopleAudience",
-        "audienceType": "Everyone: all ages, genders and abilities, including complete beginners"
+        "audienceType": "Adults aged 18 and over of all genders and abilities, including complete beginners",
+        "suggestedMinAge": 18
       },
       "offers": [
         {
@@ -141,45 +142,50 @@
           "@type": "Offer",
           "name": "4-week term",
           "price": "45",
-          "priceCurrency": "GBP"
+          "priceCurrency": "GBP",
+          "url": "https://buy.stripe.com/4gM8wP5Xl2Hp7pufEtfbq00"
         },
         {
           "@type": "Offer",
-          "name": "4-week term, early bird price for the first 10 sign-ups",
-          "price": "40",
-          "priceCurrency": "GBP"
-        },
-        {
-          "@type": "Offer",
-          "name": "Concession for students, unwaged and under 25s",
+          "name": "4-week term, concession for students and over 60s",
           "price": "35",
-          "priceCurrency": "GBP"
+          "priceCurrency": "GBP",
+          "url": "https://buy.stripe.com/14A6oH1H52HpcJO9g5fbq01"
         },
         {
           "@type": "Offer",
           "name": "Drop-in session",
           "price": "15",
-          "priceCurrency": "GBP"
+          "priceCurrency": "GBP",
+          "url": "https://buy.stripe.com/9B63cv2L96XF25abodfbq02"
         }
       ]
     },
     {
       "@type": "Event",
-      "@id": "https://wildcardvoices.co.uk/choir#free-session-2026-11-27",
+      "@id": "https://wildcardvoices.co.uk/choir#free-session-2026-12-03",
       "name": "Wildcard Choir: free first session",
       "description": "Come and try Worcester’s friendliest community choir for free. No auditions and no sheet music.",
-      "startDate": "2026-11-27T19:30:00+00:00",
-      "endDate": "2026-11-27T21:00:00+00:00",
+      "startDate": "2026-12-03T19:30:00+00:00",
+      "endDate": "2026-12-03T21:30:00+00:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
-        "name": "Venue to be confirmed, Worcester",
+        "name": "Elgar School of Music",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "16-20 Deansway",
           "addressLocality": "Worcester",
+          "postalCode": "WR1 2ES",
           "addressCountry": "GB"
-        }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 52.1917115,
+          "longitude": -2.2224417
+        },
+        "hasMap": "https://maps.app.goo.gl/gwi5YMAYz2HfM1nU8"
       },
       "image": "https://wildcardvoices.co.uk/images/og-image.jpg",
       "isAccessibleForFree": true,
@@ -190,7 +196,7 @@
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "GBP",
-        "url": "https://wildcardvoices.co.uk/contact",
+        "url": "https://wildcardvoices.co.uk/choir",
         "availability": "https://schema.org/InStock"
       }
     },
@@ -234,7 +240,15 @@
           "name": "How much does the choir cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Your first session is free. After that it’s £45 for a 4-week term (early bird £40), £35 for concessions or £15 to drop in."
+            "text": "Your first session is free. After that it’s £45 for a 4-week term, £35 for concessions (students and over 60s) or £15 to drop in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my child join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Wildcard Choir is for ages 18 and over. Wildcard Junior, our choir for younger singers, is coming soon, and 1-1 singing lessons and school workshops are open to younger singers. Get in touch and we’ll let you know when it’s ready."
           }
         },
         {
@@ -242,7 +256,7 @@
           "name": "Is it right for me?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If you love singing and fancy a laugh, yes. Every age, gender, orientation, ability and background is welcome."
+            "text": "If you love singing and fancy a laugh, yes. Everyone aged 18 and over is welcome, whatever your gender, orientation, ability or background."
           }
         }
       ],
@@ -256,7 +270,7 @@
 <div class="top"><a class="brand" href="./" aria-label="Wildcard Voices, home"><img src="images/logo.png" alt="" width="409" height="171"></a><button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav" aria-label="Main"><a href="./">Home</a><a href="choir" aria-current="page">Choir</a><a href="lessons">1-1 Lessons</a><a href="schools">Schools &amp; Workshops</a><a href="about">About</a><a href="contact">Contact</a></nav></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="leopard" width="90" height="34" patternUnits="userSpaceOnUse"><rect width="90" height="34" fill="#F2A93B"/><g fill="none" stroke="#3B1A08" stroke-width="5" stroke-linecap="round"><path d="M12 10c6-6 16-2 14 6"/><path d="M52 8c8-4 14 4 10 10"/><path d="M30 28c6 4 14 0 14-6"/><path d="M72 24c6-4 12 2 10 8"/></g><g fill="#3B1A08"><circle cx="42" cy="12" r="2.5"/><circle cx="80" cy="8" r="2.5"/><circle cx="8" cy="26" r="2.5"/><circle cx="62" cy="30" r="2"/></g></pattern></defs><rect width="100%" height="34" fill="url(#leopard)"/></svg>
 <main>
-<div class="page" data-page="choir"><section><div class="wrap"><h1 class="pt logo-title">Wildcard Choir</h1><div class="pic-wrap"><div class="pic" role="img" aria-label="Illustration of a joyful choir of adults and children singing under stage spotlights, led by a singer in a colourful zigzag outfit with one arm raised"></div></div><p class="lead">Worcester’s friendliest community choir. A weekly choir for anyone who loves a big song. No auditions, no sheet music and no shame.</p></div></section><section>
+<div class="page" data-page="choir"><section><div class="wrap"><h1 class="pt logo-title">Wildcard Choir</h1><div class="pic-wrap"><div class="pic" role="img" aria-label="Illustration of a joyful choir of adults and children singing under stage spotlights, led by a singer in a colourful zigzag outfit with one arm raised"></div></div><p class="lead">Worcester’s friendliest community choir. A weekly choir for anyone aged 18 and over who loves a big song. No auditions, no sheet music and no shame.</p></div></section><section>
 <div class="wrap">
 <h2>Come as you are</h2>
 <p class="lead">Wildcard Voices is a community choir for anyone who loves a big song and a good laugh. Every term is a brand new mixtape of bangers through the eras: the sound of the 60s, 70s glam and Bowie, 80s bops, 90s Ibiza anthems and plenty more.</p>
@@ -264,23 +278,36 @@
 <p>This is about more than singing. It’s a place to build your confidence, meet like-minded people and let go, so you can really come into your own without any judgement.</p>
 <p>Together we’ll work on our mixtape and build towards a concert at the end of each term, with the chance to sing with a live band. It’s a real gig, with a real crowd, and you’re the stars of it.</p>
 <ul class="chips">
-<li>Everyone welcome</li><li>All ages</li><li>All genders</li><li>LGBTQ+ friendly</li><li>All abilities</li><li>Mums and dads</li><li>Shift workers</li><li>Beginners</li>
+<li>Everyone welcome</li><li>Ages 18 and up</li><li>All genders</li><li>LGBTQ+ friendly</li><li>All abilities</li><li>Mums and dads</li><li>Shift workers</li><li>Beginners</li>
 </ul>
 <p style="margin-top:18px">Miss a week? We’ll send you a practice track so you never feel behind.</p>
 </div>
-</section><section class="free"><div class="wrap"><div class="free-card"><div class="free-in"><h2>First session free</h2><ul class="facts"><li>Friday 27 November 2026</li><li>7:30 to 9:00pm</li><li>Venue to be confirmed</li></ul><a class="btn" href="contact">Save my place</a></div></div></div></section><section>
+</section><section class="free"><div class="wrap"><div class="free-card"><div class="free-in"><h2>First session free</h2><ul class="facts"><li>Thursday 3 December 2026</li><li>7:30 to 9:30pm</li><li>Elgar School of Music, Deansway</li></ul><a class="btn" href="mailto:enquiries@wildcardvoices.co.uk?subject=Free%20first%20session%20-%20Thursday%203%20December&amp;body=Hi%21%20I%E2%80%99d%20like%20to%20save%20a%20place%20at%20the%20free%20first%20session%20on%20Thursday%203%20December.%0A%0AName%3A%0ANumber%20of%20places%3A%0A">Save my place</a></div></div></div></section><section>
 <div class="wrap">
 <h2>Choir prices</h2>
-<p>Weekly sessions run 7:30 to 9:30pm. Sign up on the night of your free session and get the early bird price.</p>
+<p>Weekly sessions run 7:30 to 9:30pm.</p>
 <div class="prices">
-<div class="price"><div><h3>First session</h3><span>Come and try it, no strings</span></div><b>Free</b></div>
-<div class="price main"><div><h3>4-week term</h3><span>Early bird £40 for the first 10 sign-ups</span></div><b>£45</b></div>
-<div class="price"><div><h3>Concession</h3><span>Students, unwaged and under 25s</span></div><b>£35</b></div>
-<div class="price"><div><h3>Drop-in</h3><span>For busy and unpredictable schedules</span></div><b>£15</b></div>
+<div class="price"><div><h3>First session</h3><span>Come and try it, no strings</span><div style="margin-top:10px"><a class="btn pbtn" href="mailto:enquiries@wildcardvoices.co.uk?subject=Free%20first%20session%20-%20Thursday%203%20December&amp;body=Hi%21%20I%E2%80%99d%20like%20to%20save%20a%20place%20at%20the%20free%20first%20session%20on%20Thursday%203%20December.%0A%0AName%3A%0ANumber%20of%20places%3A%0A" data-stripe="free-first">Save my place</a></div></div><b>Free</b></div>
+<div class="price main"><div><h3>4-week term</h3><span>Four weeks of singing, ending in a concert</span><div style="margin-top:10px"><a class="btn pbtn" href="https://buy.stripe.com/4gM8wP5Xl2Hp7pufEtfbq00" target="_blank" rel="noopener" data-stripe="choir-term">Book a place</a></div></div><b>£45</b></div>
+<div class="price"><div><h3>Concession</h3><span>Students and over 60s</span><div style="margin-top:10px"><a class="btn pbtn" href="https://buy.stripe.com/14A6oH1H52HpcJO9g5fbq01" target="_blank" rel="noopener" data-stripe="choir-concession">Book a place</a></div></div><b>£35</b></div>
+<div class="price"><div><h3>Drop-in</h3><span>For busy and unpredictable schedules</span><div style="margin-top:10px"><a class="btn pbtn" href="https://buy.stripe.com/9B63cv2L96XF25abodfbq02" target="_blank" rel="noopener" data-stripe="choir-dropin">Book a place</a></div></div><b>£15</b></div>
 </div>
-<p>Bring a friend and you’ll both get £5 off your term.</p>
 </div>
-</section><section><div class="wrap"><h2>Your questions</h2><details><summary>Do I need to be able to sing?</summary><p>No. There are no auditions. If you can hum along to the radio, you’ll fit right in.</p></details><details><summary>Do I need to read music?</summary><p>Not at all. We teach everything by ear and send practice tracks afterwards.</p></details><details><summary>Do I have to perform in the concert?</summary><p>No. It’s completely optional, and there’s never any pressure. Come to every rehearsal and sing for the joy of it, or join the concert too. Either way, you’re one of us. Everyone is supported, and nobody is judged.</p></details><details><summary>Can I come on my own?</summary><p>Yes, plenty of people do, and we’ll make sure you feel welcome from the first minute.</p></details><details><summary>How much does the choir cost?</summary><p>Your first session is free. After that it’s £45 for a 4-week term (early bird £40), £35 for concessions or £15 to drop in.</p></details><details><summary>Is it right for me?</summary><p>If you love singing and fancy a laugh, yes. Every age, gender, orientation, ability and background is welcome.</p></details></div></section><section class="cta"><div class="wrap"><h2>Ready to join in?</h2><a class="btn" href="contact">Get in touch</a></div></section></div>
+</section><section class="loc" aria-labelledby="loc-h"><div class="wrap">
+<h2 id="loc-h">Where to find us</h2>
+<p class="addr"><strong>Elgar School of Music</strong><br>16-20 Deansway, Worcester WR1 2ES</p>
+<a class="map pinbox" href="https://maps.app.goo.gl/gwi5YMAYz2HfM1nU8" target="_blank" rel="noopener" aria-label="Open Elgar School of Music in Google Maps"><span class="pin" aria-hidden="true">&#128205;</span><strong>Elgar School of Music</strong><span>Deansway, Worcester &middot; tap to see the map</span></a>
+<div class="btnrow"><a class="btn" href="https://maps.app.goo.gl/gwi5YMAYz2HfM1nU8" target="_blank" rel="noopener">Open in Google Maps</a><a class="btn" href="https://maps.apple.com/?q=Elgar%20School%20of%20Music&amp;ll=52.1917115,-2.2224417" target="_blank" rel="noopener">Open in Apple Maps</a></div>
+<p style="text-align:center;margin:0">Step-free access. Our sessions are in the evening, so parking is easy.</p>
+<h3>Car parks nearby</h3>
+<ul class="cp">
+<li><b>Copenhagen Street car park (WR1 2EY)</b><span>Closest, about 2 minutes’ walk. Pay and display or RingGo app.</span></li>
+<li><b>CrownGate car park (WR1 3LX)</b><span>About 3 minutes’ walk. Entrances on Broad Street and Angel Place. Number-plate recognition, so pay at the machine on the way out. Cheap evening rate (around £2 when you arrive after 5pm, at the time of writing).</span></li>
+<li><b>Newport Street car park (WR1 3NG)</b><span>About 5 minutes’ walk. Pay by RingGo.</span></li>
+<li><b>Cathedral Square, College Street (WR1 2LU)</b><span>About 5 minutes’ walk. Open 24 hours.</span></li>
+</ul>
+<p class="note">Prices and hours change, so please check the signs or app when you park. Walking times are approximate.</p>
+</div></section><section class="loc" aria-labelledby="jr-h"><div class="wrap" style="text-align:center"><span class="pill">Coming soon</span><h2 id="jr-h" style="margin-top:12px">Wildcard Junior</h2><p style="max-width:520px;margin:0 auto 20px">A choir for younger singers is on its way, with the same friendly, bonkers Wildcard spirit. Join the waiting list and we’ll be in touch as soon as we have dates.</p><a class="btn" href="mailto:enquiries@wildcardvoices.co.uk?subject=Wildcard%20Junior%20waiting%20list&amp;body=Hi%21%20Please%20add%20me%20to%20the%20waiting%20list%20for%20Wildcard%20Junior.%0A%0AParent%20or%20guardian%20name%3A%0AChild%E2%80%99s%20age%3A%0A">Join the waiting list</a></div></section><section><div class="wrap"><h2>Your questions</h2><details><summary>Do I need to be able to sing?</summary><p>No. There are no auditions. If you can hum along to the radio, you’ll fit right in.</p></details><details><summary>Do I need to read music?</summary><p>Not at all. We teach everything by ear and send practice tracks afterwards.</p></details><details><summary>Do I have to perform in the concert?</summary><p>No. It’s completely optional, and there’s never any pressure. Come to every rehearsal and sing for the joy of it, or join the concert too. Either way, you’re one of us. Everyone is supported, and nobody is judged.</p></details><details><summary>Can I come on my own?</summary><p>Yes, plenty of people do, and we’ll make sure you feel welcome from the first minute.</p></details><details><summary>How much does the choir cost?</summary><p>Your first session is free. After that it’s £45 for a 4-week term, £35 for concessions (students and over 60s) or £15 to drop in.</p></details><details><summary>Can my child join?</summary><p>The Wildcard Choir is for ages 18 and over. Wildcard Junior, our choir for younger singers, is coming soon, and 1-1 singing lessons and school workshops are open to younger singers. Get in touch and we’ll let you know when it’s ready.</p></details><details><summary>Is it right for me?</summary><p>If you love singing and fancy a laugh, yes. Everyone aged 18 and over is welcome, whatever your gender, orientation, ability or background.</p></details></div></section><section class="cta"><div class="wrap"><h2>Ready to join in?</h2><a class="btn" href="contact">Get in touch</a></div></section></div>
 </main>
 <svg class="leo" width="100%" height="34" aria-hidden="true"><rect width="100%" height="34" fill="url(#leopard)"/></svg>
 <footer>
