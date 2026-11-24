@@ -166,6 +166,9 @@ main section.testi h2{color:#FFB347;text-align:center}
 .cform .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .cform .btn:disabled{opacity:.7;cursor:wait;transform:none}
 .fnote{margin:0;font-size:15px;color:var(--muted);text-align:center}
+.form-h{text-align:center;margin:44px 0 0}
+.form-h+.cform{margin-top:20px}
+main section.xmas-sec .form-h{color:#F2C46B}
 .loc{background:#12283E;color:#fff;padding:44px 0;border-top:3px solid #000;border-bottom:3px solid #000}
 .loc h2{font-family:'Archivo Black',Impact,sans-serif;color:#FF8A2A;text-shadow:2px 2px 0 #000;text-align:center;margin:0 0 6px}
 .loc .addr{text-align:center;font-size:18px;margin:0 0 20px}
